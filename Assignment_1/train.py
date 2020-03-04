@@ -11,7 +11,7 @@ from nltk.stem import PorterStemmer
 from nltk.tokenize import word_tokenize
 
 # Obtain file name from user
-train_filename = input("Please provide the name of the file containing the training set: ")
+train_filename = input("Please provide the name of the file containing the training set:")
 
 print("\nCalculating statistics...\n")
 
@@ -80,7 +80,7 @@ outfile = input("Please provide the name of the file to save the statsitics (ex:
 
 # Save the dictionary with stats to the JSON file
 with open(outfile, 'w') as fp:
-    json.dump(d, fp)
+    json.dump(d, fp, indent = 2)
 
 
 
