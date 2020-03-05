@@ -16,13 +16,12 @@ from math import log
 from progress.bar import IncrementalBar
 
 # Obtain relevant files from user
-#test_filename = input("Please provide the name of the file containing the unlabeled documents: ")
-#stats_filename = input("Please provide the name of the file containing the training statistics: ")
+test_filename = input("Please provide the name of the file containing the unlabeled documents: ")
+stats_filename = input("Please provide the name of the file containing the training statistics: ")
 
 # Hardcoded for testing purposes 
-test_filename = "corpus1_test.list"
-stats_filename = "stats1.json"
-print("\n")
+# test_filename = "corpus1_test.list"
+# stats_filename = "stats1.json"
 
 # Convert the statistics JSON into a dictionary 
 json_str = open(stats_filename).read()
