@@ -78,7 +78,7 @@ for line in test_lines:
 		log_prior_prob = log(stats[c]["num_files"] / num_training_files)
 
 		# Laplace Smoothing Variable
-		k = 1
+		k = 0.055
 
 		# Calculate counts of words in the specific category
 		log_category_prob = 0

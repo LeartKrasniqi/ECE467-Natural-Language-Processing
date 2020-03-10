@@ -10,10 +10,11 @@ import json
 from nltk.stem import PorterStemmer
 from nltk.tokenize import word_tokenize
 
-# Obtain file name from user
-train_filename = input("Please provide the name of the file containing the training set:")
+# Cool progress bar
+from progress.bar import IncrementalBar
 
-print("\nCalculating statistics...\n")
+# Obtain file name from user
+train_filename = input("Please provide the name of the file containing the training set: ")
 
 train_file = open(train_filename, "r")
 train_lines = train_file.read().splitlines()
@@ -37,6 +38,7 @@ stemmer = PorterStemmer()
 
 d = dict()
 
+bar = IncrementalBar("Calculating statistics: ", max = len(train_lines))
 # Loop through each line in the file and determine statistics
 # Format: 	/path/to/file category
 for line in train_lines:
@@ -72,11 +74,14 @@ for line in train_lines:
 		# Increment the number of tokens in the category
 		d[category]["num_tokens"] += 1
 
+	bar.next()
+
+bar.finish()
 
 print("Done calculating statistics!\n")
 
 # Prompt user to supply the output file
-outfile = input("Please provide the name of the file to save the statsitics (ex: stats.json):")
+outfile = input("Please provide the name of the file to save the statsitics (ex: stats.json): ")
 
 # Save the dictionary with stats to the JSON file
 with open(outfile, 'w') as fp:

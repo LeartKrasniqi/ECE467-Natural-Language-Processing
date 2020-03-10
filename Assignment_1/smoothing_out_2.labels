@@ -1,6 +1,6 @@
 ./corpus2/train/29263.first I
 ./corpus2/train/29454.first I
-./corpus2/train/29496.first O
+./corpus2/train/29496.first I
 ./corpus2/train/29554.first I
 ./corpus2/train/29627.first I
 ./corpus2/train/29814.first O
@@ -10,7 +10,7 @@
 ./corpus2/train/30062.first O
 ./corpus2/train/30092.first O
 ./corpus2/train/30158.first O
-./corpus2/train/30167.first O
+./corpus2/train/30167.first I
 ./corpus2/train/30172.first O
 ./corpus2/train/30240.first I
 ./corpus2/train/30251.first O
