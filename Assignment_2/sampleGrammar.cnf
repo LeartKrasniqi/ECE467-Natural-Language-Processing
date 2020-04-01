@@ -1,0 +1,100 @@
+S --> NP VP
+S --> Verb NP
+S --> Verb PP
+S --> VP PP
+S --> book
+S --> include
+S --> prefer
+S --> fly
+S --> _Dummy2 VP
+S --> _Dummy3 S
+S --> _Dummy4 PP
+_Dummy1 --> and
+NP --> Det Nominal
+NP --> i
+NP --> she
+NP --> me
+NP --> it
+NP --> he
+NP --> they
+NP --> houston
+NP --> nwa
+Nominal --> Nominal Noun
+Nominal --> Nominal PP
+Nominal --> AdjP Nominal
+Nominal --> book
+Nominal --> books
+Nominal --> flight
+Nominal --> flights
+Nominal --> meal
+Nominal --> money
+Nominal --> 0
+Nominal --> 1
+Nominal --> 2
+Nominal --> 3
+Nominal --> 4
+Nominal --> 5
+Nominal --> 6
+Nominal --> 7
+Nominal --> 8
+Nominal --> 9
+AdjP --> AdjP Adj
+AdjP --> quick
+AdjP --> short
+AdjP --> cheap
+VP --> Verb NP
+VP --> Verb PP
+VP --> VP PP
+VP --> book
+VP --> include
+VP --> prefer
+VP --> fly
+VP --> _Dummy5 PP
+PP --> Preposition NP
+Det --> that
+Det --> this
+Det --> these
+Det --> the
+Det --> a
+Det --> an
+Noun --> book
+Noun --> books
+Noun --> flight
+Noun --> flights
+Noun --> meal
+Noun --> money
+Verb --> book
+Verb --> include
+Verb --> prefer
+Verb --> fly
+Pronoun --> i
+Pronoun --> she
+Pronoun --> me
+Pronoun --> it
+Pronoun --> he
+Pronoun --> they
+Digit --> 0
+Digit --> 1
+Digit --> 2
+Digit --> 3
+Digit --> 4
+Digit --> 5
+Digit --> 6
+Digit --> 7
+Digit --> 8
+Digit --> 9
+Adj --> quick
+Adj --> short
+Adj --> cheap
+Proper-Noun --> houston
+Proper-Noun --> nwa
+Aux --> does
+Preposition --> from
+Preposition --> to
+Preposition --> on
+Preposition --> near
+Preposition --> through
+_Dummy2 --> Aux NP
+_Dummy3 --> S _Dummy1
+_Dummy4 --> Verb NP
+_Dummy5 --> Verb NP
