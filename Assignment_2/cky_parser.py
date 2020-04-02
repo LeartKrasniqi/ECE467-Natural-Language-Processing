@@ -168,7 +168,7 @@ def main():
 
 				it += 1
 		else:
-			print("No valid parses!")
+			print("NO VALID PARSES\n")
 
 
 if __name__ == "__main__":
