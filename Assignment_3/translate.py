@@ -376,7 +376,7 @@ if argv[2] == "train" or argv[2] == "test":
 				w = input_lang.index_word[t]
 				if w != "<s>" and w != "<e>": 
 					full_sentence += w + " "
-		#full_sentence_unicode = full_sentence.decode('utf-8')
+
 		translation, _ = translate(full_sentence)
 
 		word_list = translation.split()
